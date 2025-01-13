@@ -1,0 +1,79 @@
+/* Button with off-white color initially */
+.btn-offwhite {
+    background-color: #f8f9fa; /* Off-white background */
+    color: #0c6956; /* Green text for contrast */
+    border: 1px solid #ccc; /* Light border */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover effect for the register button */
+.btn-offwhite:hover {
+    background-color: #2c3e50; /* Dark background on hover */
+    color: white; /* White text color on hover */
+    border-color: #2c3e50; /* Border changes to match the background */
+}
+
+/* Go to Home link styling */
+.go-to-home-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #16a085; /* Green color */
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for Go to Home link */
+.go-to-home-link:hover {
+    color: #2c3e50; /* Dark color on hover */
+}
+
+/* Card styling */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Card body styling */
+.card-body {
+    padding: 30px;
+}
+
+/* Ensure inputs and button are full-width */
+.form-control, .btn {
+    width: 100%;
+}
+
+/* Card header styling */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Spacing between form fields */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Ensure form container has proper height */
+.container {
+    height: 100vh;
+}
+
+.main {
+    padding: 5px 0; /* Reduce padding for smaller body */
+    max-width: 90%;  /* Optional: Limit the width to create a more compact layout */
+    margin: 0 auto; /* Optional: Center the main body */
+} 
+.form-submit {
+    display: inline-block;
+    background: #2c3e50;
+    color: #fff;
+    border-bottom: none;
+    width: auto;
+    padding: 15px 39px;
+}

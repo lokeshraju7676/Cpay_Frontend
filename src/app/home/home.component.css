@@ -1,0 +1,161 @@
+.home-container {
+    display: flex;
+    height: 100vh;
+    background-color: #16a085;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+  }
+  
+  .left-content {
+    max-width: 50%;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .left-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .left-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .apply-btn {
+    background-color: #0c6956;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    padding: 15px 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .apply-btn:hover {
+    background-color: #2c3e50 ;
+  }
+  
+  .right-content {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+/*   
+  .credit-card {
+    width: 300px;
+    height: 180px;
+    background-color: #3498db;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    animation: moveCard 4s linear infinite;
+  } */
+  
+  /* Create the animation to move the credit card */
+  @keyframes moveCard {
+    0% {
+      transform: translateX(0) rotate(0deg);
+    }
+    25% {
+      transform: translateX(100px) rotate(10deg);
+    }
+    50% {
+      transform: translateX(0) rotate(0deg);
+    }
+    75% {
+      transform: translateX(-100px) rotate(-10deg);
+    }
+    100% {
+      transform: translateX(0) rotate(0deg);
+    }
+  }
+  .credit-card {
+    width: 300px;
+    height: 180px;
+    background-image: url('/assets/credit-card.png'); /* Corrected path */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    animation: moveCard 4s linear infinite;
+    border: 2px solid black;
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Increased gap for bigger cards */
+    justify-content: space-around;
+    padding: 30px;
+  }
+  
+  .card {
+    flex: 1 1 45%; /* 2 cards in a row */
+    min-width: 300px; /* Increased min-width for bigger cards */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Added transition for background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    background-color: #16a085;  /* Change background color on hover */
+    color: black;  /* Change text color to white */
+  }
+  
+  .card-image {
+    width: 100%; /* Image takes up the full width of the card */
+    height: 200px; /* Fixed height for the image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem; /* Increased font size for bigger titles */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .card-description {
+    font-size: 1rem; /* Slightly larger text for description */
+    color: #555;
+    text-align: center;
+  }
+  
+  .card:hover .card-description {
+    color: white;  /* Change description text color to white on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 100%; /* 1 card per row on smaller screens */
+    }
+  }
+  
